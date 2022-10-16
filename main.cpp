@@ -34,7 +34,7 @@ int main() {
     printList(list);
     for (int i = 0; i < 6; ++i) {
         list.push_back(nullptr);
-        stringList.emplace_back(1, getRandStr());
+        stringList.emplace_back(Pair<int, std::string>(1, getRandStr()));
         std::string * pointer = stringList.back().b_;
         list.back() = pointer;
         printList(list);
